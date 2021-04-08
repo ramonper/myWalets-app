@@ -14,6 +14,7 @@ class CardSection extends StatelessWidget {
           child: Text(
             'Selected Card',
             style: TextStyle(
+              fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -21,7 +22,7 @@ class CardSection extends StatelessWidget {
         Expanded(
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: 2,
+              itemCount: 3,
               itemBuilder: (ctx, i) {
                 return Container(
                   width: MediaQuery.of(context).size.width,
